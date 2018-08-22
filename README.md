@@ -2,6 +2,8 @@
 
 Flagon is an opinionated composable supporting framework for Flask.
 
+[![Build Status](https://travis-ci.org/treebohotels/Flagon.svg?branch=master)](https://travis-ci.org/treebohotels/Flagon)
+
 ### What is this repository for? ###
 
 * Quick summary
