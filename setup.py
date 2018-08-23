@@ -22,5 +22,20 @@ setup(
     entry_points={
     },
     test_suite="tests",
-    description='Package for Flask wiring.'
+
+    classifiers=[
+        'Development Status :: 1 - Planning',
+        'Environment :: Web Environment',
+        'Framework :: Flagon',
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: BSD License',
+        'Operating System :: OS Independent',
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
+        'Topic :: Internet :: WWW/HTTP :: WSGI :: Application',
+        'Topic :: Software Development :: Libraries :: Application Frameworks',
+        'Topic :: Software Development :: Libraries :: Python Modules',
+    ],
 )
