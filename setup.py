@@ -6,18 +6,29 @@ def get_version():
 
 
 setup(
-    name='flagon',
+    name='Flagon',
     version=get_version(),
-    packages=find_packages(exclude=['tests', 'sample_api']),
+    license='BSD',
+    author='Karthikkannan Maruthamuthu',
+    author_email='karthikkannan@gmail.com',
+    maintainer='Karthikkannan Maruthamuthu',
+    maintainer_email='karthikkannan@gmail.com',
+    description='Package for Flask wiring.',
+
+    packages=find_packages(exclude=['tests', 'sample_app']),
+    include_package_data=True,
+    zip_safe=False,
+    platforms='any',
+    python_requires='>=3.6',
+
     install_requires=[
-        'flask==0.12.2',
-        'Flask-Migrate==2.1.1',
-        'flask-marshmallow==0.8.0',
-        'Flask-SQLAlchemy==2.3.1',
-        'marshmallow-sqlalchemy==0.13.2',
-        'psycopg2==2.7.4',
-        'structlog==18.1.0',
-        'python-json-logger==0.1.8'
+        'Flask==1.0.2',
+        'Flask-Script==2.0.6',
+        'Flask-Migrate==2.2.1',
+        'flask-marshmallow==0.9.0',
+        'Flask-SQLAlchemy==2.3.2',
+        'marshmallow-sqlalchemy==0.14.1',
+        'psycopg2==2.7.5',
     ],
     entry_points={
     },
