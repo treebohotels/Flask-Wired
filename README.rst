@@ -1,10 +1,9 @@
+===========
 Flask-Wired
 ===========
 Flask-Wired is an opinionated composable supporting framework for Flask.
 
-[![Build Status](https://travis-ci.org/treebohotels/Flask-Wired.svg?branch=master)](https://travis-ci.org/treebohotels/Flask-Wired)
-
-### What is this repository for? ###
+.. image https://travis-ci.org/treebohotels/Flask-Wired.svg?branch=master
 
 Quick summary
 -------------
@@ -22,10 +21,9 @@ Initial version supports the following:
 
 How do I get set up?
 --------------------
-* Summary of set up
-	1. Installing
+	1. Install Flask-Wired
 	.. code-block:: text
-	        pip install Flask-Wired
+	pip install Flask-Wired
 	2. configure the extensions in settings.py as usual.
 	3. follow documentation for additional keys supported by Flask-Wired.
 	4. Keep Flask-Wired version upto date with latest & greatest.
@@ -35,11 +33,15 @@ Configuration
 -------------
 Additional keys supported in settings.py by Flask-Wired:
 	1. BLUEPRINTS
-* Dependencies
+
+Dependencies
+------------
 	1. flask
 	2. flask-script
 	3. flask-migrate
-* Deployment instructions
+
+Deployment instructions
+-----------------------
 Package & Deploy your code as usual.
 
 Contribution guidelines
