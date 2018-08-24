@@ -1,21 +1,33 @@
 from setuptools import setup, find_packages
+import io
+from collections import OrderedDict
+
+with io.open('README.rst', 'rt', encoding='utf8') as f:
+    readme = f.read()
 
 
 def get_version():
-    return '0.1'
+    return '0.1.1'
 
 
 setup(
     name='Flask-Wired',
     version=get_version(),
-    license='BSD',
+    license='MIT',
     author='Karthikkannan Maruthamuthu',
     author_email='karthikkannan@gmail.com',
     maintainer='Karthikkannan Maruthamuthu',
     maintainer_email='karthikkannan@gmail.com',
     description='Package for Flask wiring.',
-
-    packages=find_packages(exclude=['tests', 'sample_app']),
+    long_description=readme,
+    url='https://github.com/treebohotels/Flask-Wired',
+    project_urls=OrderedDict((
+        ('Documentation', 'https://github.com/treebohotels/Flask-Wired'),
+        ('Code', 'https://github.com/treebohotels/Flask-Wired'),
+        ('Issue tracker', 'https://github.com/treebohotels/Flask-Wired/issues'),
+    )),
+    package_dir={'': '.'},
+    packages=find_packages(".", exclude=['tests', 'sample_app']),
     include_package_data=True,
     zip_safe=False,
     platforms='any',
@@ -37,9 +49,9 @@ setup(
     classifiers=[
         'Development Status :: 1 - Planning',
         'Environment :: Web Environment',
-        'Framework :: Flask-Wired',
+        'Framework :: Flask',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: BSD License',
+        'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Programming Language :: Python :: 3.6',

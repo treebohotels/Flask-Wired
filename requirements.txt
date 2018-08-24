@@ -8,3 +8,5 @@ psycopg2==2.7.5
 pytest==3.6.4
 pytest-bdd==2.21.0
 requests==2.19.1
+
+twine==1.11.0
