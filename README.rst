@@ -39,9 +39,9 @@ Configuration
 Dependencies
 ~~~~~~~~~~~~
 
-	1. flask
-	2. flask-script
-	3. flask-migrate
+1. Flask
+2. Flask-Script
+3. Flask-Migrate
 
 Deployment instructions
 ~~~~~~~~~~~~~~~~~~~~~~~
