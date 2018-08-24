@@ -3,7 +3,7 @@ import structlog
 import click
 from flask import Flask
 
-from flagon.extensions import db, ma
+from flask_wired.extensions import db, ma
 
 logger = structlog.get_logger()
 

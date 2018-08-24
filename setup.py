@@ -6,7 +6,7 @@ def get_version():
 
 
 setup(
-    name='Flagon',
+    name='Flask-Wired',
     version=get_version(),
     license='BSD',
     author='Karthikkannan Maruthamuthu',
@@ -37,7 +37,7 @@ setup(
     classifiers=[
         'Development Status :: 1 - Planning',
         'Environment :: Web Environment',
-        'Framework :: Flagon',
+        'Framework :: Flask-Wired',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',

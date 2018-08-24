@@ -1,12 +1,11 @@
 # -*- coding: utf-8 -*-
 from datetime import datetime
-from flagon.extensions  import db
+from flask_wired.extensions import db
 
 __all__ = ['UserProfile']
 
 
 class UserProfile(db.Model):
-
     __tablename__ = "user_profile"
 
     id = db.Column('id', db.Integer, primary_key=True)

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 from flask_script import Manager
-from flagon.app import create_app
-from flagon.extensions import db
+from flask_wired.app import create_app
+from flask_wired.extensions import db
 from flask_migrate import Migrate, MigrateCommand
 
 app = create_app()
