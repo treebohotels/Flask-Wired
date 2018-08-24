@@ -20,52 +20,43 @@ Initial version supports the following:
 	4. Structured Logging
 	5. Request Id generator
 
-How do I set up?
-~~~~~~~~~~~~~~~~
+How do I install?
+~~~~~~~~~~~~~~~~~
 
 .. code-block:: text
 
 	pip install Flask-Wired
 
-
-1. Install Flask-Wired
-.. code-block:: text
-
-pip install Flask-Wired
-
-2. configure the extensions in settings.py as usual.
-3. follow the documentation for additional keys supported by Flask-Wired.
-4. Keep Flask-Wired version up to date with latest & greatest.
-
-Note: Do not add a direct dependency to Flask in your project directly.
-
 Configuration
--------------
+~~~~~~~~~~~~~
 
-Additional keys supported in settings.py by Flask-Wired:
-	1. BLUEPRINTS
+1. configure the extensions in settings.py as usual.
+2. follow the documentation for additional keys supported by Flask-Wired.
+3. Keep Flask-Wired version up to date with latest & greatest.
+
+.. note:: Do not add a direct dependency to Flask in your project directly.
 
 Dependencies
-------------
+~~~~~~~~~~~~
 
 	1. flask
 	2. flask-script
 	3. flask-migrate
 
 Deployment instructions
------------------------
+~~~~~~~~~~~~~~~~~~~~~~~
 
 Package & Deploy your code the same way as with Flask.
 
 Contribution guidelines
------------------------
+~~~~~~~~~~~~~~~~~~~~~~~
 
 * Writing tests - TBD
 * Code review - TBD
 * Other guidelines - TBD
 
 Who do I talk to?
------------------
+~~~~~~~~~~~~~~~~~
 
 * Repo owner or admin
 * Other community or team contact
