@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 import io
 from collections import OrderedDict
 
-with io.open('README.MD', 'rt', encoding='utf8') as f:
+with io.open('README.rst', 'rt', encoding='utf8') as f:
     readme = f.read()
 
 
