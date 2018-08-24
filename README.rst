@@ -10,17 +10,17 @@ Quick summary
 
 Flask-Wired is designed to be used Flask to simplify initial bootstrap wiring for Micro Services by
 
-	1. Taking a standardized way of wiring the components like DB connections, transactions, serializers, service discovery, log aggregation etc.
-	2. Provide a place for the boilerplate code to be maintained in a standardized way & upgrade seamlessly
-	3. Reduce the time taken for bootstrapping by simplifying the service template. Ex: defaults for app.py, manage.py will be provided by Flask-Wired.
+1. Taking a standardized way of wiring the components like DB connections, transactions, serializers, service discovery, log aggregation etc.
+2. Provide a place for the boilerplate code to be maintained in a standardized way & upgrade seamlessly
+3. Reduce the time taken for bootstrapping by simplifying the service template. Ex: defaults for app.py, manage.py will be provided by Flask-Wired.
 
 Initial version supports the following:
 
-	1. DB connection
-	2. marshmallow as default serializer
-	3. Flask blueprints registration
-	4. Structured Logging
-	5. Request Id generator
+1. DB connection
+2. marshmallow as default serializer
+3. Flask blueprints registration
+4. Structured Logging
+5. Request Id generator
 
 How do I install?
 ~~~~~~~~~~~~~~~~~
