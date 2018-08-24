@@ -1,16 +1,16 @@
-# Flagon #
+# Flask-Wired #
 
-Flagon is an opinionated composable supporting framework for Flask.
+Flask-Wired is an opinionated composable supporting framework for Flask.
 
-[![Build Status](https://travis-ci.org/treebohotels/Flagon.svg?branch=master)](https://travis-ci.org/treebohotels/Flagon)
+[![Build Status](https://travis-ci.org/treebohotels/Flask-Wired.svg?branch=master)](https://travis-ci.org/treebohotels/Flask-Wired)
 
 ### What is this repository for? ###
 
 * Quick summary
-Flagon is designed to be used Flask to simplify initial bootstrap wiring for microservices by
+Flask-Wired is designed to be used Flask to simplify initial bootstrap wiring for microservices by
 	1. Taking standardized way of wiring the components like db connections, transactions, serializers, service discovery, log aggregation etc.
 	2. Provide a place for the boilerplate code to be maintained in standardized way & upgrade seemlessly
-	3. Reduce the time taken for bootstrapping by simplifying the service template. Ex: defaults for app.py, manage.py will be provided by Flagon. 
+	3. Reduce the time taken for bootstrapping by simplifying the service template. Ex: defaults for app.py, manage.py will be provided by Flask-Wired. 
 * Version
 Initial version supports the following:
 	1. db connection
@@ -22,13 +22,13 @@ Initial version supports the following:
 ### How do I get set up? ###
 
 * Summary of set up
-	1. pip install flagon
+	1. pip install Flask-Wired
 	2. configure the extensions in settings.py as usual.
-	3. follow documentation for additional keys supported by Flagon.
-	4. Keep Flagon version upto date with latest & greatest.
+	3. follow documentation for additional keys supported by Flask-Wired.
+	4. Keep Flask-Wired version upto date with latest & greatest.
 Note: Do not add direct dependency to Flask in your project directly.
 * Configuration
-Additional keys supported in settings.py by Flagon:
+Additional keys supported in settings.py by Flask-Wired:
 	1. BLUEPRINTS
 * Dependencies
 	1. flask

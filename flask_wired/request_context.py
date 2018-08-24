@@ -1,14 +1,16 @@
 import flask
 import uuid
 
+
 def generate_request_id(original_id=''):
     """
     if an original request id is given return the same
     """
-    if original_id :
+    if original_id:
         return original_id
     new_id = uuid.uuid4().hex
     return new_id
+
 
 def request_id():
     """
