@@ -1,10 +1,9 @@
 import pytest
-from flask import Flask
 from pytest_bdd import scenario, given, when, then, parsers
 
 
-@scenario('basic_flask.feature', 'Basic Flask Application')
-def test_hello_world_flask_application():
+@scenario('basic_flask.feature', 'Flask-Wired Hello World')
+def test_hello_world_flask_wired_application():
     pass
 
 
@@ -13,9 +12,10 @@ def scenario_context():
     return {}
 
 
-@given('A Hello World Flask Application')
-def hello_world_flask_app():
-    app = Flask("hello_world")
+@given('A Hello World Flask-Wired Application')
+def hello_world_flask_wired_app():
+    from flask_wired import FlaskWired
+    app = FlaskWired("hello_world")
 
     @app.route('/hello')
     def hello_world():
@@ -25,11 +25,10 @@ def hello_world_flask_app():
 
 
 @when(parsers.parse('Accessing {endpoint}'))
-def http_get_endpoint(scenario_context, hello_world_flask_app, endpoint):
-    client = hello_world_flask_app.test_client()
+def http_get_endpoint(scenario_context, hello_world_flask_wired_app, endpoint):
+    client = hello_world_flask_wired_app.test_client()
     response = client.get(endpoint)
     scenario_context['response'] = response
-    parsers.parse('I get a {expected_status:d} Response')
 
 
 @then(parsers.parse('I get a {expected_status:d} Response'))
