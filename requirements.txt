@@ -10,3 +10,4 @@ pytest-bdd==2.21.0
 requests==2.19.1
 
 twine==1.11.0
+flake8==3.5.0
